@@ -1,0 +1,6 @@
+--G3 Avin Mehla 23bai70080 session1
+SELECT
+  part,
+  assembly_step
+FROM parts_assembly
+WHERE finish_date IS NULL;
