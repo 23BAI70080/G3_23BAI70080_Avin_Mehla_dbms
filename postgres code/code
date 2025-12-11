@@ -1,6 +1,20 @@
---G3 Avin Mehla 23bai70080 session1
-SELECT
-  part,
-  assembly_step
-FROM parts_assembly
-WHERE finish_date IS NULL;
+--G3_23BAI70080_Avin Mehla_SESSION1
+CREATE TABLE Employee (
+    emp_id SERIAL PRIMARY KEY,
+    emp_name VARCHAR(100),
+    department VARCHAR(50),
+    salary NUMERIC(10,2)
+);
+
+INSERT INTO Employee VALUES
+(101, 'Ajay', 'IT', 50000),
+(102, 'Avin Mehla', 'HR', 80000),
+(103, 'Mohan', 'IT', 100000);
+
+CREATE VIEW Employee_View AS
+SELECT emp_id, emp_name, department
+FROM Employee;
+
+CREATE ROLE Analyst;
+
+GRANT SELECT ON Employee_View TO Analyst;
