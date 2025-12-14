@@ -1,4 +1,4 @@
---G3_23BAI70080_AVIN MEHLA_SESSION1
+--G3_23BAI70080_Avin Mehla_SESSION1
 CREATE TABLE Employee (
     emp_id SERIAL PRIMARY KEY,
     emp_name VARCHAR(100),
@@ -7,9 +7,9 @@ CREATE TABLE Employee (
 );
 
 INSERT INTO Employee VALUES
-(101, 'Gaurav Monga', 'IT', 50000),
+(101, 'Ajay', 'IT', 50000),
 (102, 'Avin Mehla', 'HR', 80000),
-(103, 'Ashish', 'Finance', 100000);
+(103, 'Mohan', 'IT', 100000);
 
 CREATE VIEW Employee_View AS
 SELECT emp_id, emp_name, department
